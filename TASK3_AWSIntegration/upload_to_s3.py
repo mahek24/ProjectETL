@@ -10,10 +10,6 @@ s3_bucket = os.getenv('S3_BUCKET')
 s3_key_users = os.getenv('S3_KEY_USERS')
 s3_key_bank_accounts = os.getenv('S3_KEY_BANK_ACCOUNTS')
 
-# AWS S3 configuration
-#s3_bucket = 'dblambdafunct'
-#s3_key_users = 'filtered_users.json'
-#s3_key_bank_accounts = 'transformed_bank_accounts.json'
 
 # Initialize S3 client
 s3_client = boto3.client('s3')

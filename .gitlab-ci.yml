@@ -1,0 +1,68 @@
+stages:
+  - setup
+  - extract
+  - transform
+  - load
+  - deploy
+
+variables:
+  AWS_DEFAULT_REGION: "us-east-1"  # Update to your region
+  S3_BUCKET_NAME: "S3_BUCKET"  # Update to your S3 bucket name
+  DB_HOST: "DB_HOST"
+  DB_USER: "DB_USER"
+  DB_PASSWORD: "DB_PASSWORD"
+  DB_NAME: "DB_NAME"
+
+# Step 1: Setup Stage - Install Dependencies
+setup:
+  stage: setup
+  image: python:3.12
+  script:
+    - pip install -r requirements.txt
+
+# Step 2: Extract Stage - Extract Data from SQL Database
+extract:
+  stage: extract
+  image: python:3.12
+  script:
+    - python database.py
+  artifacts:
+    paths:
+      - database.csv  # Assuming data is extracted to a CSV file
+  only:
+    - master
+
+# Step 3: Transform Stage - Transform Data using Pandas
+transform:
+  stage: transform
+  image: python:3.12
+  script:
+    - python data_transformation.py
+  artifacts:
+    paths:
+      - transformed_data.json  # The transformed data in JSON format
+  dependencies:
+    - extract
+  only:
+    - master
+
+# Step 4: Load Stage - Load Data to AWS S3
+load:
+  stage: load
+  image: amazon/aws-cli
+  script:
+    #- aws s3 cp transformed_data.json s3://$S3_BUCKET_NAME/transformed_data.json
+  dependencies:
+    - transform
+  only:
+    - master
+
+# Step 5: Deploy Stage - Deploy AWS Lambda Function
+deploy:
+  stage: deploy
+  image: amazon/aws-cli
+  script:
+    #- aws lambda update-function-code --function-name your_lambda_function_name --zip-file fileb://lambda_function.zip
+  only:
+    - master
+
