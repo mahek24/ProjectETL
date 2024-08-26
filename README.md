@@ -3,7 +3,7 @@
 Here's a basic `README.md` template you can use for your project:
 
 ## Overview
-The project involves creating a small ETL pipeline using Python, AWS services, and a SQL database, with a focus on implementing object-oriented principles and security measures.
+The project involves creating a small ETL pipeline using Python, AWS services, and an SQL database, with a focus on implementing object-oriented principles and security measures.
 
 
 ### Prerequisites
@@ -21,20 +21,17 @@ The project involves creating a small ETL pipeline using Python, AWS services, a
 2. **Set up environment variables:**
    - Create a `.env` file in the root directory with the following variables:
     
-     DB_HOST=your-database-host
-     DB_USER=your-database-user
-     DB_PASSWORD=your-database-password
-     DB_NAME=your-database-name
-     AWS_ACCESS_KEY_ID=your-aws-access-key-id
-     AWS_SECRET_ACCESS_KEY=your-aws-secret-access-key
+     - DB_HOST=your-database-host
+     - DB_USER=your-database-user
+     - DB_PASSWORD=your-database-password
+     - DB_NAME=your-database-name
+     - AWS_ACCESS_KEY_ID=your-aws-access-key-id
+     - AWS_SECRET_ACCESS_KEY=your-aws-secret-access-key
 
 
 ### Running the Project
-1. **Run the ETL pipeline:**
 
-   python main.py
-
-2. **Expected Output:**
+. **Expected Output:**
    - The script will connect to the MySQL database, perform data transformations, and store the results in the specified S3 bucket.
 
 ### Troubleshooting
