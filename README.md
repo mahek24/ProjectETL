@@ -1,4 +1,4 @@
-# VepoLink_Assessment
+# ETL Project
 
 Here's a basic `README.md` template you can use for your project:
 
