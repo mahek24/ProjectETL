@@ -1,0 +1,12 @@
+{"user_id":1,"name":"John Doe","email":"john.doe@example.com","age":28,"signup_date":1673740800000,"age_group":"25-29"}
+{"user_id":2,"name":"Jane Smith","email":"jane.smith@example.com","age":34,"signup_date":1676851200000,"age_group":"30-34"}
+{"user_id":3,"name":"Alice Johnson","email":"alice.johnson@example.com","age":22,"signup_date":1678406400000,"age_group":"20-24"}
+{"user_id":4,"name":"Alice Smith","email":"alice.smith@example.com","age":30,"signup_date":1705276800000,"age_group":"25-29"}
+{"user_id":5,"name":"Bob Johnson","email":"bob.johnson@example.com","age":45,"signup_date":1708387200000,"age_group":"40-44"}
+{"user_id":6,"name":"Charlie Brown","email":"charlie.brown@example.com","age":25,"signup_date":1710028800000,"age_group":"20-24"}
+{"user_id":7,"name":"Alice Smith","email":"alice.smith@example.com","age":30,"signup_date":1705276800000,"age_group":"25-29"}
+{"user_id":8,"name":"Bob Johnson","email":"bob.johnson@example.com","age":45,"signup_date":1708387200000,"age_group":"40-44"}
+{"user_id":9,"name":"Charlie Brown","email":"charlie.brown@example.com","age":25,"signup_date":1710028800000,"age_group":"20-24"}
+{"user_id":10,"name":"Alice Smith","email":"alice.smith@example.com","age":30,"signup_date":1705276800000,"age_group":"25-29"}
+{"user_id":11,"name":"Bob Johnson","email":"bob.johnson@example.com","age":45,"signup_date":1708387200000,"age_group":"40-44"}
+{"user_id":12,"name":"Charlie Brown","email":"charlie.brown@example.com","age":25,"signup_date":1710028800000,"age_group":"20-24"}

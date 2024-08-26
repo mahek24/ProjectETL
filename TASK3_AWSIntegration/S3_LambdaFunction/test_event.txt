@@ -1,0 +1,14 @@
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "dblambdafunct"
+        },
+        "object": {
+          "key": "filtered_users.json"
+        }
+      }
+    }
+  ]
+}
